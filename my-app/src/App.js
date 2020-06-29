@@ -1,26 +1,28 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+// import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+// const Header = () => {
+//   return (
+//     <header>
+//       <h1>RESTy</h1>
+//     </header>
+//   )
+// };
+
+// const Footer = () => <footer>&copy; 2020 RESTy</footer>;
+
+//Write an App component that serves as the container for all sub-components of this application
+class App extends React.Component {
+      return (
+          <div class="App">
+              <Header />
+              <Form />
+              <Footer />
+          </div>
+      );
 }
+
+
+
 
 export default App;
