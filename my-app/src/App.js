@@ -1,25 +1,23 @@
 import React from 'react';
-// import './App.css';
+import './styles/App.scss';
 
-// const Header = () => {
-//   return (
-//     <header>
-//       <h1>RESTy</h1>
-//     </header>
-//   )
-// };
-
-// const Footer = () => <footer>&copy; 2020 RESTy</footer>;
+//import Header, Form, and Footer
+import Header from './Header';
+import Footer from './Footer';
+import Form from './Form';
 
 //Write an App component that serves as the container for all sub-components of this application
 class App extends React.Component {
-      return (
-          <div class="App">
-              <Header />
-              <Form />
-              <Footer />
-          </div>
-      );
+    //render Header, Form, and Footer
+    render() {
+        return(
+            <div id="app">
+                <Header />
+                <Form />
+                <Footer />
+            </div>
+        )
+    }
 }
 
 
