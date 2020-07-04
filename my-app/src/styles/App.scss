@@ -1,12 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+@import './_variables';
 
 * {
-    font-family: 'Source Code Pro', monospace;
-    margin: 1%;
+    font-family: $primaryFont;
+    margin: $mainMargin;
 }
 
 body {
-    background-color: #d4d4dc;
+    background-color: $bodyColor;
 }
 
 #app {
@@ -16,7 +16,7 @@ body {
 
 .App-logo {
   pointer-events: none;
-  box-shadow: -1px 0px 6px #8885F3;
+  box-shadow: -1px 0px 6px $glowShadow;
   border-radius: 50px;
 }
 

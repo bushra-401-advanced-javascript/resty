@@ -1,5 +1,7 @@
+@import './_variables';
+
 .container {
-    padding-top: 7%;
+    padding-top: 10%;
     margin-bottom: 5%;
 }
 
@@ -8,65 +10,65 @@
     width: 27%;
     box-sizing: border-box;
     border: none;
-    border-bottom: 3px solid red;
-    background-color: #d4d4dc;
+    border-bottom: 3px solid $secondaryColor;
+    background-color: $bodyColor;
 }
 
 #url:focus {
     outline: none !important;
-    border:1px solid red;
-    box-shadow: 0 0 10px #719ECE;
+    border:1px solid $secondaryColor;
+    box-shadow: 0 0 10px $inputShadow;
 }
 
 .method {
     padding: 1.5%;
     border: none;
-    border-left: 3px solid red;
-    background-color: #393f4d;
+    border-left: 3px solid $secondaryColor;
+    background-color: $primaryColor;
     color: #ffff;
 }
 
 .method:hover {
     cursor: pointer;
-    background-color: #888888e0;
+    background-color: $shadowColor;
     color: #ffffff;
     font-weight: bolder;
 }
 
 #get_btn:focus {
     outline: none !important;
-    background-color: #61AFFE;
-    border: 3px solid red;
-    box-shadow: 0 0 10px #719ECE;
+    background-color: $getColor;
+    border: 3px solid $secondaryColor;
+    box-shadow: 0 0 10px $inputShadow;
 }
 
 #post_btn:focus {
     outline: none !important;
-    background-color: #63CC90;
-    border: 3px solid red;
-    box-shadow: 0 0 10px #719ECE;
+    background-color: $postColor;
+    border: 3px solid $secondaryColor;
+    box-shadow: 0 0 10px $inputShadow;
 }
 
 #put_btn:focus {
     outline: none !important;
-    background-color:#EEA02D;
-    border: 3px solid red;
-    box-shadow: 0 0 10px #719ECE;
+    background-color: $putColor;
+    border: 3px solid $secondaryColor;
+    box-shadow: 0 0 10px $inputShadow;
 }
 
 #del_btn:focus {
     outline: none !important;
-    background-color: #E63B3A;
-    border: 3px solid red;
-    box-shadow: 0 0 10px #719ECE;
+    background-color: $deleteColor;
+    border: 3px solid $secondaryColor;
+    box-shadow: 0 0 10px $inputShadow;
 }
 
 button {
     padding: 2%;
     border-radius: 7%;
-    border-color: #393f4d;
-    box-shadow: 0 0 10px #888888;
-    background-color: #dd3a3a;
+    border-color: $primaryColor;
+    box-shadow: 0 0 10px $shadowColor;
+    background-color: $btnColor;
     color: #ffffff;
     font-size: larger;
 }
@@ -82,7 +84,7 @@ button:focus {
 }
 
 .requests {
-    background-color: #393F4D;
+    background-color: $primaryColor;
     width: 50%;
     height: 200px;
     margin: auto;

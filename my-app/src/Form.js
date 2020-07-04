@@ -39,11 +39,16 @@ class Form extends Component {
         }
         else {
             // console.log(this.state);
-             url = this.url;
-             method = '';
-             msg = 'Please add a URL and select a method..';
-            this.setState({url, method, msg});
+            url = '';
+            method = '';
+            msg = 'Please add a URL and select a method..';
+            this.setState({ url, method, msg });
+            e.target.reset();
         }
+
+        this.url = '';
+        this.method = '';
+        this.msg = '';
     }
 
     render() {

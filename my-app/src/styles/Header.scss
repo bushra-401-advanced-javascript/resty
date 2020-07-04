@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+@import './_variables';
 
 header {
     margin-top: 0;
     display: flex;
     justify-content: center;
-    background-color: #393f4d;
+    background-color: $primaryColor;
     position: fixed;
     top: 0;
     width: 100%;
@@ -13,7 +13,7 @@ header {
     padding: 1%;
     margin-bottom: 1.5%;
     overflow: hidden;
-    box-shadow: 5px 3px 5px #888888;
+    box-shadow: 5px 3px 5px $shadowColor;
 }
 
 #banner {
@@ -21,7 +21,7 @@ header {
 }
 
 h1 {
-    font-family: 'Orbitron', sans-serif;
+    font-family: $headerFont;
     text-shadow: 1px 1px #DB593C;
-    color: #db594d
+    color: $headingColor;
 }

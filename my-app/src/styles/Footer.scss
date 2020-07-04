@@ -1,5 +1,7 @@
+@import './_variables';
+
 footer {
-    background-color: #393F4D;
+    background-color: $primaryColor;
     margin: 0 !important;
     height: 50px;
     color: #ffff;
