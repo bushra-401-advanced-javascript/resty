@@ -1,0 +1,27 @@
+@import './_variables';
+
+header {
+    margin-top: 0;
+    display: flex;
+    justify-content: center;
+    background-color: $primaryColor;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    left: -15px;
+    right: 0;
+    padding: 1%;
+    margin-bottom: 1.5%;
+    overflow: hidden;
+    box-shadow: 5px 3px 5px $shadowColor;
+}
+
+#banner {
+    display: contents;
+}
+
+h1 {
+    font-family: $headerFont;
+    text-shadow: 1px 1px #DB593C;
+    color: $headingColor;
+}

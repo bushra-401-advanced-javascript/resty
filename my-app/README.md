@@ -27,4 +27,4 @@ The following user stories detail the major functionality for this phase of the 
 
 ## UML
 
-![UML](./assets/lab26-uml.jpg)
+![UML](../assets/lab26-uml.jpg)
