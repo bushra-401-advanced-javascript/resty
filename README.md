@@ -3,6 +3,10 @@
 
 **RESTy Phase 1:** Begin work on the RESTy API testing application
 
+## Links & Resources
+
+- [deployed site](https://bushra-401-advanced-javascript.github.io/resty/) 
+
 ## Phase 1 Requirements
 
 In phase 1, our goal is to setup the basic scaffolding of the application, with intent being to add more functionality to the system as we go.  
