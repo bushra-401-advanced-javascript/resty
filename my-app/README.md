@@ -14,6 +14,13 @@ The following user stories detail the major functionality for this phase of the 
 - As a user, I want to enter the URL to a REST API and select the REST method to use to access it
 - As a user, I want visual confirmation that my entries and selections are valid so that I have confidence the application will be able to fetch the API data that I’ve requested
 
+## Setup/Run 
+
+- clone the app repo
+- move into `my-app` deirctory => `cd my-app`
+- install the dependencies => `npm i`
+- run the app => `npm run start`
+
 ## UML
 
 ![UML](../assets/lab26-uml.jpg)
