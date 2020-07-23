@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
-import './styles/Form.scss';
+import '../styles/Form.scss';
 
 class Form extends Component {
-    constructor() {
-        super();
+    constructor(props) {
+        super(props);
+        this.props = props;
         this.url = '';
         this.method = '';
         this.state = {
@@ -23,32 +24,42 @@ class Form extends Component {
         // console.log('From HandleMethod>>>', this.method);
     }
 
-    handleSubmit = e => {
-        e.preventDefault();
-        let url = this.url;
-        // console.log('From HandleSubmit>>>', this.url);
-        let method = this.method;
-        // console.log('From HandleSubmit>>>', this.method);
-        let msg = '';
-        if (url && method) {
-            this.setState({ url, method, msg });
+    handleSubmit = async (e) => {
+        try {
+            e.preventDefault();
+            let url = this.url;
+            // console.log('From HandleSubmit>>>', this.url);
+            let method = this.method;
+            // console.log('From HandleSubmit>>>', this.method);
+            let msg = '';
+            if (url && method) {
+                this.setState({ url, method, msg });
+                
+                e.target.reset();
+
+                const raw = await fetch(this.url);
+                const data = await raw.json();
+                this.props.handler(data);
+
+                this.url = '';
+                this.method = '';
+                this.msg = '';
+            }
+            else {
+                // console.log(this.state);
+                url = '';
+                method = '';
+                msg = 'Please add a URL and select a method..';
+                this.setState({ url, method, msg });
+                e.target.reset();
+            }
+
             this.url = '';
             this.method = '';
             this.msg = '';
-            e.target.reset();
+        } catch (error) {
+            console.log(error);
         }
-        else {
-            // console.log(this.state);
-            url = '';
-            method = '';
-            msg = 'Please add a URL and select a method..';
-            this.setState({ url, method, msg });
-            e.target.reset();
-        }
-
-        this.url = '';
-        this.method = '';
-        this.msg = '';
     }
 
     render() {
@@ -70,7 +81,6 @@ class Form extends Component {
                         <span className="req_method"><br />{this.state.method}</span>
                         <span className="req_url">{this.state.url}</span>
                         <span className="msg">{this.state.msg}</span>
-
                     </div>
                 </section>
             </div>

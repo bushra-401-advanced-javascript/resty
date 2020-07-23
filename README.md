@@ -1,22 +1,21 @@
 # RESTy
-# LAB 26 - Component Based UI
+# LAB 28 - Props and State
 
-**RESTy Phase 1:** Begin work on the RESTy API testing application
+**RESTy Phase 3:** Connect RESTy with APIs, running live requests
 
 ## Links & Resources
 
 - [deployed site](https://bushra-401-advanced-javascript.github.io/resty/) 
 
-## Phase 1 Requirements
+## Phase 3 Requirements
 
-In phase 1, our goal is to setup the basic scaffolding of the application, with intent being to add more functionality to the system as we go.  
-This initial build sets up the file structure so that we can progressively build this application in a scalable manner.  
+In phase 3, we will be connecting RESTy to live APIs, fetching and displaying remote data. Our primary focus will be to service GET requests.  
 
 The following user stories detail the major functionality for this phase of the project:
 
-- As a user, I expect an easy to read and understand user interface so that I can use the application intuitively
-- As a user, I want to enter the URL to a REST API and select the REST method to use to access it
-- As a user, I want visual confirmation that my entries and selections are valid so that I have confidence the application will be able to fetch the API data that I’ve requested
+- As a user, I want to enter the URL to an API and issue a GET request so that I can retrieve it’s data
+- As a user, I want to see the results returned from an API request in my browser in a readable format
+
 
 ## Setup/Run 
 
@@ -27,4 +26,4 @@ The following user stories detail the major functionality for this phase of the 
 
 ## UML
 
-![UML](./assets/lab26-uml.jpg)
+![UML](./assets/lab28-uml.jpg)
